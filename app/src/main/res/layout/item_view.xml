@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="35dp">
+
+
+    <TextView
+        android:id="@+id/title_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="left|center"
+        android:text="@string/system_notification"
+        android:textColor="@color/color_ff6464"
+        android:drawableRight="@drawable/horn"
+        android:drawablePadding="5dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="14sp" />
+    <View
+        android:layout_width="1dp"
+        android:layout_marginTop="7.5dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/color_cdcdcd" />
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/main_title"
+        layout="@layout/common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/ly_choice"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/image_choice"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/guan" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/message_view"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/ly_choice"
+                android:src="@drawable/comui_tab_message_selected" />
+
+            <TextView
+                android:id="@+id/unread_tip_view"
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/message_view"
+                android:background="@drawable/ic_red_dot"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+               />
+            <TextView
+                android:id="@+id/unread_message_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/message_view"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/unread_tip_view"
+                android:text="@string/message_notification"
+                android:textColor="@color/color_464646"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_alignLeft="@id/unread_message_view"
+
+                android:gravity="right"
+                android:layout_toLeftOf="@+id/ly_right"
+                android:text="2017-07-14"
+                android:textColor="@color/color_b4b4b4"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tip_message_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_alignBottom="@id/message_view"
+                android:layout_alignLeft="@id/unread_message_view"
+                android:layout_below="@+id/unread_message_view"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@id/message_view"
+                android:layout_toLeftOf="@+id/ly_right"
+                android:text="ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg"
+                android:textColor="@color/color_787878"
+                android:lineSpacingExtra="1.5dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:id="@+id/ly_right"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_set_read"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="@string/set_read"
+            android:textColor="@color/color_4bacff"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:id="@+id/tv_delete"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="@color/color_4bacff"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

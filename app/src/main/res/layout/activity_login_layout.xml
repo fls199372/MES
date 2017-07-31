@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_icon">
+
+    <RelativeLayout
+        android:id="@+id/rl_login_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <ImageView
+            android:id="@+id/iv_login_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo"
+
+            />
+        <com.ewininfo.mes.widget.ClearEditText
+            android:id="@+id/login_input_number"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/edit_login"
+            android:drawableLeft="@drawable/ic_action_person"
+            android:paddingLeft="0dp"
+            android:drawablePadding="20dp"
+            android:gravity="left|center"
+            android:hint="@string/account"
+            android:lines="1"
+            android:textColor="@color/color_d2d2d2"
+            android:textColorHint="@color/color_d2d2d2"
+            android:textSize="16sp" />
+
+        <com.ewininfo.mes.widget.ClearEditText
+            android:id="@+id/login_input_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/login_input_number"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="0dp"
+            android:background="@drawable/edit_login"
+            android:drawableLeft="@drawable/ic_action_accounts"
+            android:drawablePadding="20dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:textColor="@color/color_d2d2d2"
+            android:textColorHint="@color/color_d2d2d2"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/rl_login_input"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:background="@color/color_ff7231"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textSize="@dimen/text_18" />
+</RelativeLayout>

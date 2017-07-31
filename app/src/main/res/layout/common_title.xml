@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/activity_title_height"
+    android:background="@color/color_ff7231">
+
+    <ImageView
+        android:id="@+id/img_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/comment_back_normal"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/system_notification"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/tv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/edit"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+</RelativeLayout>
